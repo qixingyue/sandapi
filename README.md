@@ -46,3 +46,5 @@ At last run this docker command:
 ```
 docker run -d -v /data0/sandapi/sample_user:/app/code/users/ --name sandapi sandapi 
 ```
+
+* also it defined an daemon process , it will call users.daemon_func if it exits .

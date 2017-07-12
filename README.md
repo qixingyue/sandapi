@@ -1,6 +1,6 @@
 sandapi
 
-======
+------
 
 * 用docker 构建api容器，只需要修改code部分代码，然后，重新运行就ok
 * 用户可以重新定义users 包，然后用-v 参数挂载到 -v <users_dir>:/app/code/users
@@ -37,6 +37,9 @@ def import_fn():
 ```
 
 then url /ok can be called .
+
+Or you can download one package from this project: 
+[https://raw.githubusercontent.com/qixingyue/sandapi/master/sample.tar.gz](https://raw.githubusercontent.com/qixingyue/sandapi/master/sample.tar.gz)
 
 At last run this docker command:
 

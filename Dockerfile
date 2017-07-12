@@ -9,9 +9,9 @@ WORKDIR /app
 
 RUN mkdir -p /app/{conf,logs}
 RUN echo_supervisord_conf > conf/supervisord.conf
+ADD code /app/code
 RUN /bin/bash code/echo_supervisor.sh >> conf/supervisord.conf
 ADD start.sh /app/start.sh
-ADD code /app/code
 RUN pip install -r code/requirements.txt
 EXPOSE 8080
 

@@ -1,4 +1,5 @@
 FROM centos:7
+MAINTAINER xingyue<qixingyue@126.com>
 RUN yum update -y
 RUN yum install java-1.8.0-openjdk-1.8.0.111-2.b15.el7_3 -y 
 RUN yum install python-setuptools-0.9.8-4.el7 net-tools -y 
